@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Summarization App</title>
+  <link rel="stylesheet" href="test.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Summarize Like Never Before</h1>
+    <p>Enter your text below and get a concise summary instantly.</p>
+    <button class="cta-button">Get Started</button>
+  </header>
+
+  <section class="upload-section">
+    <h2>Upload Your Document</h2>
+    <div class="upload-box">
+      <input type="file" id="fileInput" accept=".pdf,.docx,.txt" onchange="handleFileUpload()" />
+      <label for="fileInput">Drag & Drop or Click to Upload</label>
+    </div>
+  </section>
+
+  <section class="options-section">
+    <h2>Choose Summarization Level</h2>
+    <div class="options">
+      <div class="option-card" id="dialogOption">Dialogs</div>
+      <div class="option-card" id="abstractOption">Abstract</div>
+    </div>
+    <p id="selectedOptionMessage">You have not selected an option yet.</p>
+  </section>
+
+  <!-- Integration of boxes.html content -->
+  <section class="summarization-boxes">
+    <div class="container">
+      <!-- Input Section -->
+      <div class="input-section">
+        <h2>Input Your Text</h2>
+        <textarea id="userInput" placeholder="Enter or paste your text here..."></textarea>
+        <button onclick="summarizeText()">Summarize</button>
+      </div> 
+
+      <!-- Output Section -->
+      <div class="output-section">
+        <h2>Summarized Text</h2>
+        <p id="summaryOutput" class="empty">Your summary will appear here...</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="test.js"></script>
+</body>
+</html>
+

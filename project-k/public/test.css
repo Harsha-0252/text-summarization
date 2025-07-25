@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+header.hero {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #1f4068, #162447);
+  color: #fff;
+}
+
+header.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header.hero .cta-button {
+  background-color: #e43f5a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header.hero .cta-button:hover {
+  background-color: #ff2e63;
+}
+
+/* Upload Section */
+.upload-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.upload-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.upload-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px dashed #eaeaea;
+  border-radius: 10px;
+  background-color: #1f4068;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #ff2e63;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-box label {
+  display: block;
+  font-size: 1.2em;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+/* Options Section */
+.options-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.options-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-card {
+  padding: 20px;
+  background-color: #1f4068;
+  border-radius: 10px;
+  color: #eaeaea;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.option-card:hover {
+  background-color: #e43f5a;
+  transform: translateY(-5px);
+}
+
+/* Summarization Boxes Section */
+.summarization-boxes {
+  padding: 40px;
+  background: #162447;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  justify-content: space-between; /* Add spacing between boxes */
+  align-items: flex-start; /* Align items to the top of the container */
+  width: 80%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: auto; /* Center the container horizontally */
+}
+
+.input-section, .output-section {
+  width: 45%; /* Allocate 45% width to each section */
+  height: 500px; /* Increased height for better readability */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.input-section {
+  border: 2px solid #2ecc71; /* Green border for input section */
+}
+
+.output-section {
+  border: 2px solid #3498db; /* Blue border for output section */
+
+}
+
+.input-section h2,
+.output-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.output-section h2{
+  margin-top: 5px;
+  
+}
+
+textarea#userInput {
+  width: 100%;
+  height: 100%; /* Adjusted to take full height of the input section */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #eaeaea;
+  color: #1a1a2e;
+  resize: none;
+}
+
+textarea#userInput:focus {
+  outline: 2px solid #e43f5a;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #e43f5a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff2e63;
+}
+
+.output-section p {
+  width: 100%;
+  height: 75%; /* Increased height to accommodate more content */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #1a1a2e;
+  font-size: 1em;
+  white-space: pre-wrap; /* Ensure proper wrapping of text */
+  overflow-y: auto; /* Allow scrolling if text is too long */
+}
+
+.output-section p.empty {
+  font-style: italic;
+  color: #777;
+}
+
+
+  
